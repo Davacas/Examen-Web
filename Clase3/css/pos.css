@@ -1,0 +1,34 @@
+div {
+	width: 100px;
+	height: 100px;
+	background-color: #fe0fe0;
+	font-size: 30px;
+	/*float: left; Mueve todos los elementos hacia el lugar especificado de la pantalla*/
+}
+
+.cajaPadre{
+	width: 500px;
+	height: 500px;
+	background-color: #000000;
+	position: relative;
+}
+.caja{
+	/*position: static; Se pone por defecto, por eso casi nunca se escribe*/
+	/*position: relative; Se hacen los cambios a partir del punto donde se manda llamar*/
+	/*position: fixed; Se queda estáticos los elementos sin importar los scrolleos*/
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	right: 0px;
+	left: 0px;
+}
+
+img{
+	width: 400px;
+	height: 220px;
+	float: left; /*Logra que la imagen se vuelva como un elemento de línea.*/
+}
+
+.clear{
+	clear: both; /*Quita las propiedades de float sólo por este párrafo*/
+}

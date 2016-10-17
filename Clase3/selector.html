@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Selectores avanzados</title>
+	<style>
+		div > h2 {
+			background-color: gray;
+		}
+		div > p {
+			background-color: yellow;
+		}
+
+		img{
+			width: 50%;
+			height: 50%;
+		}
+	</style>
+</head>
+<body>
+	<h1>Selector de hijos</h1>
+	<div>
+		<h2>Lorem ipsum dolor sit amet.</h2>
+		<img src="img">
+		<p>Lorem ipsum.</p>
+		<p>Otro lorem ipsum.</p>
+		<p>Más lorem ipsum.</p>
+	</div>
+	<div>
+		<span><p>No tengo estilo porque no soy hijo directo :(</p></span>
+	</div>
+	<p>Y yo menos porque ni soy un div :'(</p>
+</body>
+</html>

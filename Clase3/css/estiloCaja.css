@@ -1,0 +1,15 @@
+h1, div, p, a{
+	background: #ff8000;
+}
+
+div{
+	width: 200px;
+	height: 100px;
+	/*Margen externo "margin*/
+	margin: 20px 50px;
+	/*margen interno*/
+	padding: 30px;
+	/*El margen*/
+	border: 10px solid #000000;
+	display: inline-block;
+}

@@ -1,0 +1,126 @@
+h1{
+	color:#ffffff;
+	text-align: center;
+}
+
+body{
+	background-color: #f1f1f1;
+	font-family: Arial;
+}
+
+ul{
+	list-style: none;
+}
+
+img{
+	width: 50%;
+	height: 50%;
+	display: block; 
+	margin-left: auto; 
+	margin-right: auto;
+}
+
+a{
+	text-decoration: none;
+	color: rgba(0,0,0,0);
+}
+
+a:hover{
+	color:#ccc;
+}
+
+li{
+	display: inline;
+}
+
+li:hover a{
+	background-color: #fff;
+	color: #000;
+}
+
+li.active a{
+	background-color: #aaa;
+}
+
+table, th, td{
+	border: 1px solid black;
+	border-collapse: collapse;	/*Une los bordes de las tablas.*/
+}
+
+th, td{
+	padding: 10px;	/*espacio entre los bordes de celda y su contenido*/
+}
+
+.menuCentro{
+	margin-top: 8%;
+	bottom: 0px;
+	display: block;
+	margin-right: 0px;
+	margin-left: 23%;
+}
+
+.footerMenu{
+	position: static;
+	display: block;
+	margin-right: 0px;
+	margin-left: 30%;
+	margin-bottom: 0px;
+}
+
+.informacionJustificado{
+	width: 60%;
+	text-align: justify;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+.historiaJustificado{
+	width: 60%;
+	text-align: justify;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+.informacionCentrado{
+	text-align: center;
+}
+
+.cabecera{
+	width: 100%;
+	height: 75px;
+	background-color: #000000;
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	right: 0px;
+	left: 0px;
+}
+
+.menu{
+	display: inline-block;
+	color: #000;
+	text-align: center;
+	padding-left: 40px;
+	padding-right: 40px;
+	margin-left: 0px;
+	margin-right: 
+	background: black;
+	font-size: 14px;
+}
+
+.noMostrar{
+	display: none;
+}
+
+.footer{
+	height: 20px;
+	background-color: gray;
+	border-radius: 50px;
+}
+
+.centrarTabla{
+	margin-left: 15%;
+	text-align: center;
+	width: 70%;
+	
+}

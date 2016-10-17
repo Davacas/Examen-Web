@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Selectores aún más avanzados</title>
+	<style>
+		a[target]{ /*Se aplica dobre todo lo que tenga la etiqueta target*/
+			background-color: gray;
+		}
+
+    a[target=_blank]{ /*Para abrir la página en una nueva pestaña*/
+      background-color: red;
+    }
+
+		img{
+			width: 30%;
+			height: 30%;
+		}
+
+    img[title~=alemán] { /*Sucederá a todo lo que contenga la palabra "alemán"*/
+      border: 5px solid red;
+    }
+
+    img[title~=ruso] { /*Sucederá sobre todo lo que contenga la palabra "ruso*/
+      border: 5px solid blue;
+    }
+
+    p[lang|=en]{ /*Sólo funciona cuando el valor está al inicio del valor del atributo*/
+      background-color: gray;
+    }
+
+    div[class*=test]{ /*Sucederá sobre todo lo que contenga "test", aunque sea de "testarudo"*/
+      background-color: #ffff00;
+    }
+
+	</style>
+</head>
+<body>
+		<p>Los links con target van a quedar en gris:</p>
+    <a href="http://www.asdf.com">asdf.com</a>
+    <a href="http://www.facebook.com" target="blank">facebook.com</a>
+
+    <p>Se pone en gris todo lo que empieza con "en"</p>
+    <p lang="en">Hello!</p>
+    <p lang="en-us">Hi!</p>
+    <p lang="us">iasdi!</p>
+    <p lang="en-gb">HoliiI!</p>
+
+    <p>Seleccionar sólo la clase test:</p>
+    <div class="first_test">El primer div.</div>
+    <div class="second">El segundo div.</div>
+    <div class="test">Tercer div.</div>
+    <p class="test">Esto no es un div.</p>
+
+    <p>¿Cuál es el tanque alemán de los siguientes.</p>
+    <img src="img/is7.jpg" title="tanque pesado ruso">
+    <img src="img/tiger.jpg" title="tanque pesado alemán">
+    <img src="img/kursk.jpg" title="algo ruso">
+</body>
+</html>
